@@ -1,10 +1,64 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
+/* Geral */
+
+*{
+    font-family: 'Asap', Arial, Helvetica, sans-serif;
+}
+
+section {
+    padding: 40px 0;
+}
+
+body {
     margin: 0;
 }
 
+h1, h2, h3 {
+    font-family: 'Flamenco', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    line-height: 56px;
+    font-weight: 200;  
+}
+
+p {
+    margin: 0;
+    font-family: 'Asap', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4a4a4a;
+}
+
+h3 {
+    padding-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    text-align: left;
+    display: block;
+}
+
+/* Navegação */
+
 .topbar ul li {
     display: inline;
+    margin: 10px;
+}
+
+.topbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    width: 10px;
+    padding: 10px;
 }
 
 nav.topbar {
@@ -12,10 +66,19 @@ nav.topbar {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    background-color: rgba(0,0,0,.2);
-    padding: 10px 0;
+    top: 0;
     width: 100%;
+    background-color: rgba(0,0,0.2);   
 }
+
+.btn1 {
+    border: 1px solid yellow;
+    border-radius: 8px;
+    color: yellow;
+    padding: 5px;
+}
+
+/* Header */
 
 
 header {
@@ -24,44 +87,275 @@ header {
     min-height: 100vh;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    }
-
-h1 {
-    color: white;
-    font-size: 36px;
 }
 
 header p {
-    color: white;
-    font-size: 18px;
-    font
+    margin-bottom: 30px;
 }
 
-header a {
-    text-align: center;
-    display: block;
-    width: 700px;
-    margin: 30px;
-    background-color: goldenrod;
-    color: gray;
-    padding: 20px 30px;
-    font-weight: bold;
+.btn2 {
+    font-family: 'Asap', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: #f8c538;
+    color: #4a4a4a;
+    padding: 15px 40px;
     text-decoration: none;
-    font-size: 30px;
+    border-radius: 4px;
     text-transform: uppercase;
-    border-radius: 15px;
-    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Main Section Sobre */
+
+.sobre {
+    padding-top: 60px;
+}
+
+.sobre img {
+    max-width: 120px;
 }
 
 .sobre > div {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.desc-sobre {
+    max-width: 35%;
+    margin-left: 30px;
+}
+
+/* Seção Passo a Passo */
+
+.img-grupo {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.img-grupo div {
+    width: 300px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+/* Seção Serviços */
+
+.servicos {
+    background: url(../img/bg-servicos.png);
+    background-size: cover;
+}
+
+.cards {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.desc-sobre {
-    max-width: 40%;
-    margin-left: 30px;
+.cards div {
+    width: 350px;
+    background-color: #2bc1d1;
+    padding: 30px 60px;
+    margin: 0 30px;
+    border-radius: 4px;
+    min-height: 400px;
+    text-align: center;
+}
+
+/* Seção Curiosidades */
+
+.curiosidades {
+    background: url(../img/bg-numeros.png);
+    background-size: cover;
+}
+
+.curiosidades p, .curiosidades h2{
+    color: #fff;
+}
+
+.destaques{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+ }
+
+ .destaques div{
+    width: 200px;
+    padding: 0 50px;
+    text-align: center;
+    
+}
+
+.numeros{
+    font-family: 'Asap', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 80px;
+    color: #fedd6a;
+ }
+
+ /* Sessão Contato */
+
+ .contato {
+     background-color: #f3f3f3;
+ }
+
+ .formulario {
+     display: flex;
+     justify-content: center;
+ }
+
+ .formulario div {
+    width: 450px;
+}
+
+form {
+    margin: 0;
+    font-family: 'Asap', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #4a4a4a;
+}
+
+.formulario form input, textarea{
+    margin: 0;
+    padding: 5px 0;
+    font-family: 'Asap', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    background: #ffe9af;
+    border: 1px solid #e8cf8e;
+}
+
+form div label,input,.btn-form {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.one-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one-row div{
+    width: 46%;
+
+}
+
+.btn-form {
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #339192;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    border-radius: 1px;
+ }
+
+ /* Seção Newsletter */
+
+ .newsletter {
+     background-color: #fedd6a;
+ }
+
+ .btn-newsletter {
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #c1392c;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    border-radius: 2px;
+    margin-left: 20px; 
+    width: 70%;
+ }
+
+ .novidades{
+    display: flex;
+    justify-content: center;
+}
+
+.novidades div {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.novidades form input{
+    margin: 0;
+    padding: 5px 0;
+    font-family: 'Asap', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    border: 0;
+}
+
+/* Seção Footer */
+
+footer {
+    background-color: #554f4f;
+}
+
+.lists ul li {
+    text-align: left;
+    list-style-type: none;
+}
+
+.lists {
+    display: flex;
+    justify-content: center;
+}
+
+.lists li a{
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-family: 'Flamenco', cursive;
+    color: #fff;
+    font-size: 14px;
+}
+
+.lists div{
+    width: 200px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 11px;
+    color: #fff;
+}
+
+footnote{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media img{
+    padding: 0 10px;
+}
+
+.contato-email {
+    text-decoration: none; 
+    color: #fff;
+    font-family: 'Asap', sans-serif;
+    font-size: 11px;
+    margin: 0;
 }
